@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc4k4t6rmccqd"]
+
+[ext_resource type="Script" uid="uid://dfwk6sagoljfo" path="res://player.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://c1ra6l46652u8" path="res://player/player.gd" id="2_h2yge"]
+
+[node name="Node3D" type="Node3D"]
+metadata/vector = Vector3(0, 0, 0)
+
+[node name="Player" type="MeshInstance3D" parent="."]
+script = ExtResource("1_0xm2m")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+script = ExtResource("2_h2yge")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
